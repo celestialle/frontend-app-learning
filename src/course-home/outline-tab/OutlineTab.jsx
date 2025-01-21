@@ -7,11 +7,11 @@ import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
 import { Button } from '@openedx/paragon';
 import { AlertList } from '../../generic/user-messages';
 
-import CourseDates from './widgets/CourseDates';
-import CourseHandouts from './widgets/CourseHandouts';
+// import CourseDates from './widgets/CourseDates';
+// import CourseHandouts from './widgets/CourseHandouts';
 import StartOrResumeCourseCard from './widgets/StartOrResumeCourseCard';
 import WeeklyLearningGoalCard from './widgets/WeeklyLearningGoalCard';
-import CourseTools from './widgets/CourseTools';
+// import CourseTools from './widgets/CourseTools';
 import { fetchOutlineTab } from '../data';
 import messages from './messages';
 import Section from './Section';
@@ -193,7 +193,7 @@ const OutlineTab = ({ intl }) => {
                 subscribedToReminders={selectedGoal && 'subscribedToReminders' in selectedGoal ? selectedGoal.subscribedToReminders : false}
               />
             )}
-            <CourseTools />
+            {/* <CourseTools /> */}
             <UpgradeNotification
               offer={offer}
               verifiedMode={verifiedMode}
@@ -207,8 +207,8 @@ const OutlineTab = ({ intl }) => {
               courseId={courseId}
               org={org}
             />
-            <CourseDates />
-            <CourseHandouts />
+            {/* <CourseDates /> */}
+            {/* <CourseHandouts /> */}
           </div>
         )}
       </div>
