@@ -92,32 +92,32 @@ Factory.define('courseHomeMetadata')
         path: 'progress',
       },
     ),
-    Factory.build(
-      'tab',
-      {
-        title: 'Instructor',
-        priority: 4,
-        slug: 'instructor',
-        type: 'instructor',
-      },
-      {
-        courseId: id,
-        host,
-        path: 'instructor',
-      },
-    ),
-    Factory.build(
-      'tab',
-      {
-        title: 'Dates',
-        priority: 5,
-        slug: 'dates',
-        type: 'dates',
-      },
-      {
-        courseId: id,
-        host,
-        path: 'dates',
-      },
-    ),
+    // Factory.build(
+    //   'tab',
+    //   {
+    //     title: 'Instructor',
+    //     priority: 4,
+    //     slug: 'instructor',
+    //     type: 'instructor',
+    //   },
+    //   {
+    //     courseId: id,
+    //     host,
+    //     path: 'instructor',
+    //   },
+    // ),
+    // Factory.build(
+    //   'tab',
+    //   {
+    //     title: 'Dates',
+    //     priority: 5,
+    //     slug: 'dates',
+    //     type: 'dates',
+    //   },
+    //   {
+    //     courseId: id,
+    //     host,
+    //     path: 'dates',
+    //   },
+    // ),
   ]);
