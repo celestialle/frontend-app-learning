@@ -21,15 +21,13 @@ const CourseTabsNavigation = ({
           aria-label={intl.formatMessage(messages.courseMaterial)}
         >
           {tabs.map(({ url, title, slug }) => (
-            (title !== "Dates" && title !== "Instructor") && (
-              <a
-                key={slug}
-                className={classNames('nav-item flex-shrink-0 nav-link', { active: slug === activeTabSlug })}
-                href={url}
-              >
-                {title}
-              </a>
-            )
+            <a
+              key={slug}
+              className={classNames('nav-item flex-shrink-0 nav-link', { active: slug === activeTabSlug })}
+              href={url}
+            >
+              {title}
+            </a>
           ))}
         </Tabs>
       </div>
